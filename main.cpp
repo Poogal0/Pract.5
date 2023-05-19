@@ -1,11 +1,10 @@
+#include "TBook.h"
 #include <iostream>
-#include "LogElement.h"
 
 int main() {
-    LogElement elem(1, 1);
-    std::cout << "Input 1: " << elem.input1 << std::endl;
-    std::cout << "Input 2: " << elem.input2 << std::endl;
-    std::cout << "Output: " << elem.output << std::endl;
-
+    TBook book("The Catcher in the Rye", "J.D. Salinger", 1951);
+    std::cout << "Title: " << book.title << std::endl;
+    std::cout << "Author: " << book.author << std::endl;
+    std::cout << "Year: " << book.year << std::endl;
     return 0;
 }
